@@ -1,0 +1,174 @@
+// 引入 normalize
+@import 'normalize.scss';
+// 引入 swiper的 scss
+@import '../lib/swiper/swiper.min.scss';
+// 引入 base
+@import 'base.scss';
+// 设置 高度 100%
+html,
+body {
+    height: 100%;
+}
+
+// loading页面
+.loading {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #ffece9;
+    .rider {
+        position: absolute;
+        width: (154/32)*1rem;
+        height: (121/32)*1rem;
+        background: url('../image/loading/rider1_.png') no-repeat center / 100% 100%;
+        top: (233/32)*1rem;
+        right: (108/32)*1rem;
+    }
+    .progress {
+        width: (416/32)*1rem;
+        height: (20/32)*1rem;
+        background-color: #fc2e4d;
+        border: 2px solid #373838;
+        border-radius: (20/32)*1rem;
+        position: absolute;
+        left: 50%;
+        margin-left: (-416/32/2)*1rem;
+        top: (360/32)*1rem;
+    }
+    .info {
+        width: (220/32)*1rem;
+        height: (28/32)*1rem;
+        background: url('../image/loading/loading-txt.png')no-repeat center / 100% 100%;
+        position: absolute;
+        left: 50%;
+        margin-left: (-220/32/2)*1rem;
+        top: (420/32)*1rem;
+    }
+    .logo {
+        width: (162/32)*1rem;
+        height: (39/32)*1rem;
+        background: url('../image/loading/waimai-logo.png')no-repeat center / 100% 100%;
+        position: absolute;
+        bottom: (118/32)*1rem;
+        left: 50%;
+        margin-left: (-162/32/2)*1rem;
+    }
+    .copyright {
+        font-size: (24/32)*1rem;
+        color: #e0979d;
+        position: absolute;
+        bottom: (73/32)*1rem;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+// 欢迎页面
+.welcome {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: deepskyblue; // 顶部的文字
+    .info {
+        width: (397/32)*1rem;
+        height: (224/32)*1rem;
+        background: url('../image/page1/theme-title.png') no-repeat center /100% 100%;
+        position: absolute;
+        top: (42/32)*1rem;
+        left: 50%;
+        margin-left: (-397/32/2)*1rem; // hello文字
+        .hello {
+            width: (70/32)*1rem;
+            height: (75/32)*1rem;
+            background: url('../image/page1/hello.png')no-repeat center /100% 100%;
+            position: absolute;
+            top: (20/32)*1rem;
+            right: (8/32)*1rem;
+        }
+    } // 熊盒子
+    .bear-box {
+        width: (167/32)*1rem;
+        height: (279/32)*1rem;
+        position: absolute;
+        bottom: (346/32)*1rem;
+        left: 50%;
+        margin-left: (-167/32/2)*1rem;
+        .bear {
+            width: 100%;
+            height: 100%;
+            background: url('../image/page1/rider2.png')no-repeat center /100% 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .smoke {
+            width: (167/32)*1rem;
+            height: (32/32)*1rem;
+            background: url('../image/page1/jet1.png')no-repeat center /100% 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    } // 云
+    .cloud {
+        width: (640/32)*1rem;
+        height: (673/32)*1rem;
+        bottom: 0;
+        position: absolute;
+        background: url('../image/page1/clouds.png')no-repeat center /100% 100%;
+    } // 云
+    .grass1 {
+        width: (640/32)*1rem;
+        height: (396/32)*1rem;
+        bottom: 0;
+        position: absolute;
+        background: url('../image/page1/grass1.png')no-repeat center /100% 100%;
+    } // 云
+    .trees {
+        width: (599/32)*1rem;
+        height: (71/32)*1rem;
+        bottom: (352/32)*1rem;
+        position: absolute;
+        background: url('../image/page1/trees.png')no-repeat center /100% 100%;
+    } // 草2
+    .grass2 {
+        width: (640/32)*1rem;
+        height: (228/32)*1rem;
+        bottom: 0;
+        position: absolute;
+        background: url('../image/page1/grass2.png')no-repeat center /100% 100%;
+    } // 旋转按钮的 容器
+    .rotate-btn-box {
+        width: (208/32)*1rem;
+        height: (208/32)*1rem;
+        position: absolute;
+        bottom: (86/32)*1rem;
+        left: 50%;
+        margin-left: (-208/32/2)*1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btn {
+            width: (124/32)*1rem;
+            height: (113/32)*1rem;
+            background: url('../image/page1/bear-btn-aft.png')no-repeat center /100% 100%;
+        }
+        .circle1 {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url('../image/page1/circle1.png')no-repeat center /100% 100%;
+        }
+        .circle2 {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url('../image/page1/circle2.png')no-repeat center /100% 100%;
+        }
+    }
+}

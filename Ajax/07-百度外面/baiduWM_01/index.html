@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>title</title>
+  <!-- rem实现适配 -->
+  <script type="text/javascript">
+    // 页面打开 立即计算
+    document.querySelector('html').style.fontSize = window.screen.width / 20 + 'px';
+    // 尺寸更改也会重新计算
+    // 这里 写这个事件的目的是 是为了 让我们在 桌面端测试时 可以自动计算 移动端
+    window.onresize = function () {
+      document.querySelector('html').style.fontSize = window.screen.width / 20 + 'px';
+    }
+  </script>
+
+  <!-- swiper css -->
+  <!-- 为了 降低 请求的 次数 把 swiper的样式 也合并 -->
+  <!--<link rel = "stylesheet" type="text/css" href = "lib/swiper/swiper.min.css" / >-->
+
+  <!-- 在 swiper样式的后面导入 避免 出现覆盖问题
+      swiper的样式 页合并完毕了
+   -->
+  <link rel = "stylesheet" type="text/css" href = "css/index.css" / >
+</head>
+
+<body>
+  <!-- loading页面 -->
+  <div class="loading">
+    <div class="rider"></div>
+    <div class="progress"></div>
+    <div class="info"></div>
+    <!-- 外卖的logo -->
+    <div class="logo"></div>
+    <!-- 版权信息 -->
+    <div class="copyright">@ 2017 DuBai Waimai Produced</div>
+  </div>
+  <!-- 欢迎页 布局 -->
+  <div class="welcome">
+    <div class="info">
+      <div class="hello"></div>
+    </div>
+    <!-- 云-->
+    <div class="cloud"></div>
+        <!-- 草地 -->
+    <div class="grass1"></div>
+    <!-- 熊笼 -->
+    <div class="bear-box">
+      <div class="bear"></div>
+      <div class="smoke"></div>
+    </div>
+    <!-- 树 -->
+    <div class="trees"></div>
+    <!-- 草2 -->
+    <div class="grass2"></div>
+
+    <!-- 旋转的按钮 -->
+    <div class="rotate-btn-box">
+      <div class="btn"></div>
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<!-- swiper的js -->
+<script type="text/javascript" src="lib/swiper/swiper.min.js"></script>
+
+<!-- zepto的js -->
+<script type="text/javascript" src="lib/zepto/zepto.js"></script>
+<script type="text/javascript" src="lib/zepto/event.js"></script>
+<script type="text/javascript" src="lib/zepto/touch.js"></script>
+<script type="text/javascript" src="lib/zepto/fx.js"></script>
+<script type="text/javascript" src="lib/zepto/fx_methods.js"></script>
